@@ -226,7 +226,11 @@ namespace Kviz
 					canvas.Children.Add(txtb);
 					txtb.Text = "Eredmény: Jó" + jó + " Összes: " + sum;
 
+					break;
 
+
+				case 7:
+					Application.Current.Shutdown();
 					break;
 			}
 
