@@ -1,0 +1,5 @@
+1. Melyik állatot látjuk a képen?;kecske;elefánt;zsiráf;flamingó
+2. Melyik állatot látjuk a képen?;oroszlán;krokodil;tigris;aligátor
+3. Melyik állatot látjuk a képen?;róka;patkány;víziló;holló
+4. Melyik állatot látjuk a képen?;bárány;sas;hal;rák
+5. Melyik állatot látjuk a képen?;kakas;tyúk;kecske;rigó
