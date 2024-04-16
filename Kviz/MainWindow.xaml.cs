@@ -23,12 +23,12 @@ namespace Kviz
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		string[] valaszok = { "zsiráf", "aligátor", "róka", "sas", "kecske" };
+		string[] valaszok = { "kockás zsiráf", "aligátor", "Róka", "Fehérfejű rétisas", "Kecske" };
 		List<Allat> allats = new List<Allat>();
 
 		int db = 1;
 		int sum = 0;
-		int jó = 0;
+		float jó = 0;
 		
 		public MainWindow()
 		{
@@ -40,12 +40,12 @@ namespace Kviz
 		{
 			sum++;
 			img1.Visibility = Visibility.Visible;
-			nyomas.Content = jó+" "+sum;
-			if (valaszok.Contains(btn1.Content))
+            nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            if (valaszok.Contains(btn1.Content))
 			{
 				jó++;
-				nyomas.Content = jó + " " + sum;
-			}
+                nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            }
 
 
 
@@ -55,12 +55,12 @@ namespace Kviz
 		{
 			sum++;
 			img2.Visibility = Visibility.Visible;
-			nyomas.Content = jó + " " + sum;
-			if (valaszok.Contains(btn2.Content))
+            nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            if (valaszok.Contains(btn2.Content))
 			{
 				jó++;
-				nyomas.Content = jó + " " + sum;
-			}
+                nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            }
 
 
 
@@ -70,12 +70,12 @@ namespace Kviz
 		{
 			sum++;
 			img3.Visibility = Visibility.Visible;
-			nyomas.Content = jó + " " + sum;
-			if (valaszok.Contains(btn3.Content))
+            nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            if (valaszok.Contains(btn3.Content))
 			{
 				jó++;
-				nyomas.Content = jó + " " + sum;
-			}
+                nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            }
 
 
 
@@ -85,12 +85,12 @@ namespace Kviz
 		{
 			sum++;
 			img4.Visibility = Visibility.Visible;
-			nyomas.Content = jó + " " + sum;
-			if (valaszok.Contains(btn4.Content))
+            nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            if (valaszok.Contains(btn4.Content))
 			{
 				jó++;
-				nyomas.Content = jó + " " + sum;
-			}
+                nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
+            }
 
 
 
@@ -211,7 +211,7 @@ namespace Kviz
 					break;
 				case 6:
 					zarokep.Source = new BitmapImage(new Uri("/img/shocked-surprised.gif", UriKind.Relative));
-					lbl1.Content = "Köszönjük hogy játszottál";
+					lbl1.Content = "Köszönjük hogy játszottál!";
 					btn5.Content = "Bezár!";
 					btn1.Visibility = Visibility.Hidden;
 					btn2.Visibility = Visibility.Hidden;
@@ -223,14 +223,15 @@ namespace Kviz
 					img3.Visibility = Visibility.Hidden;
 					img4.Visibility = Visibility.Hidden;
 					nyomas.Content = "";
-					TextBox txtb = new TextBox();
-					txtb.Height = 50;
-					txtb.Width = 200;
-					txtb.Margin = new Thickness(300,200,0,0);
+					Label txtb = new Label();
+					txtb.Height = 100;
+					txtb.Width = 350;
+					txtb.Margin = new Thickness(250,200,0,0);
+					txtb.FontSize = 20;
 					txtb.Background = new SolidColorBrush(Colors.Azure);
 					txtb.Foreground = new SolidColorBrush(Colors.Black);
 					canvas.Children.Add(txtb);
-					txtb.Text = $"Eredmény: Jó: {jó}  Összes tipp: {sum}\nSzázalékban: {jó/sum}";
+					txtb.Content = $"Eredmény:\nJó tipp: {jó}  Összes tipp: {sum}\nSzázalékban: {Math.Round(jó/sum,2)*100}%";
 					db++;
 
 					break;
