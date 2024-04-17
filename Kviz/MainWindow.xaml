@@ -6,43 +6,43 @@
         xmlns:local="clr-namespace:Kviz"
         mc:Ignorable="d"
         Title="Kvíz" Height="450" Width="800">
-    <Canvas x:Name="canvas">
-        <StackPanel Height="100" Width="800">
-            <StackPanel Height="64" Background="Orange">
-                <Label x:Name="lbl1" Content="" Height="64" Width="800" Foreground="White" FontSize="38" HorizontalAlignment="Center" VerticalAlignment="Top" />
-            </StackPanel>
-        </StackPanel>
-        <Button x:Name="btn1"  Content="" Canvas.Left="44" Canvas.Top="159" FontSize="14" Height="58" Width="188" Click="Btn1_Click"/>
-        <Button x:Name="btn2"  Content="" Canvas.Left="511" Canvas.Top="169" FontSize="14" Height="58" Width="188" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btn2_Click"/>
-        <Button x:Name="btn3"  Content="" Canvas.Left="44" Canvas.Top="248" FontSize="14" Height="58" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btn3_Click"/>
-        <Button x:Name="btn4"  Content="" Canvas.Left="511" Canvas.Top="248" FontSize="14" Height="58" Width="188" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btn4_Click"/>
-        <Image x:Name="img1" Visibility="Hidden"  Height="53" Canvas.Left="230" Canvas.Top="161" Width="52" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/img/x.png"/>
-        <Image x:Name="img2" Visibility="Hidden"  Height="53" Canvas.Left="705" Canvas.Top="169" Width="52"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Image x:Name="img4" Visibility="Hidden"  Height="53" Canvas.Left="705" Canvas.Top="250" Width="52"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Image x:Name="img3" Visibility="Hidden"  Height="53" Canvas.Left="230" Canvas.Top="252" Width="52"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:Name="btn5" Content="Ready!" FontSize="40" Canvas.Left="256" Canvas.Top="342" Height="60" Width="260" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF99F51A" Click="btn5_Click"/>
-        <Label x:Name="nyomas" Content="" Canvas.Left="527" Canvas.Top="90" RenderTransformOrigin="0.5,0.5" Height="28" Width="253" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.688"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Image x:Name="allatok_kep" Height="130" Canvas.Left="280" Canvas.Top="66" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Image x:Name="zarokep" Height="320" Canvas.Top="82" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="21" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.17"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image x:Name="nyitokep" Height="350" Canvas.Left="2" Width="800"/>
+	<Canvas x:Name="canvas">
+		<StackPanel Height="100" Width="800">
+			<StackPanel Height="64" Background="Orange">
+				<Label x:Name="lbl1" Content="" Height="64" Width="800" Foreground="White" FontSize="38" HorizontalAlignment="Center" VerticalAlignment="Top" />
+			</StackPanel>
+		</StackPanel>
+		<Button x:Name="btn1"  Content="" Canvas.Left="44" Canvas.Top="159" FontSize="14" Height="58" Width="188" Click="Btn1_Click"/>
+		<Button x:Name="btn2"  Content="" Canvas.Left="511" Canvas.Top="169" FontSize="14" Height="58" Width="188" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btn2_Click"/>
+		<Button x:Name="btn3"  Content="" Canvas.Left="44" Canvas.Top="248" FontSize="14" Height="58" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btn3_Click"/>
+		<Button x:Name="btn4"  Content="" Canvas.Left="511" Canvas.Top="248" FontSize="14" Height="58" Width="188" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btn4_Click"/>
+		<Image x:Name="img1" Visibility="Hidden"  Height="53" Canvas.Left="230" Canvas.Top="161" Width="52" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/img/x.png"/>
+		<Image x:Name="img2" Visibility="Hidden"  Height="53" Canvas.Left="705" Canvas.Top="169" Width="52"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+		<Image x:Name="img4" Visibility="Hidden"  Height="53" Canvas.Left="705" Canvas.Top="250" Width="52"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+		<Image x:Name="img3" Visibility="Hidden"  Height="53" Canvas.Left="230" Canvas.Top="252" Width="52"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+		<Button x:Name="btn5" Content="Ready!" FontSize="40" Canvas.Left="256" Canvas.Top="342" Height="60" Width="260" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF99F51A" Click="btn5_Click"/>
+		<Label x:Name="nyomas" Content="" FontSize="14" Canvas.Left="527" Canvas.Top="90" RenderTransformOrigin="0.5,0.5" Height="58" Width="253" HorizontalAlignment="Center" VerticalAlignment="Top">
+			<Label.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="0.688"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Label.RenderTransform>
+		</Label>
+		<Image x:Name="allatok_kep" Height="130" Canvas.Left="280" Canvas.Top="66" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+		<Image x:Name="zarokep" Height="320" Canvas.Top="82" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="21" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-0.17"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="nyitokep" Height="350" Width="800"/>
 
-    </Canvas>
+	</Canvas>
 </Window> 
