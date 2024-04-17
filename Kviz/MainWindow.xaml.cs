@@ -39,10 +39,18 @@ namespace Kviz
 		private void Btn1_Click(object sender, RoutedEventArgs e)
 		{
 			sum++;
+			btn1.Visibility = Visibility.Hidden;
 			img1.Visibility = Visibility.Visible;
             nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             if (valaszok.Contains(btn1.Content))
 			{
+				img2.Visibility = Visibility.Hidden;
+				img3.Visibility = Visibility.Hidden;
+				img4.Visibility = Visibility.Hidden;
+				btn1.Visibility = Visibility.Visible;
+				btn4.Visibility = Visibility.Hidden;
+				btn2.Visibility = Visibility.Hidden;
+				btn3.Visibility = Visibility.Hidden;
 				jó++;
                 nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             }
@@ -54,10 +62,18 @@ namespace Kviz
 		private void btn2_Click(object sender, RoutedEventArgs e)
 		{
 			sum++;
+			btn2.Visibility = Visibility.Hidden;
 			img2.Visibility = Visibility.Visible;
             nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             if (valaszok.Contains(btn2.Content))
 			{
+				img1.Visibility = Visibility.Hidden;
+				img3.Visibility = Visibility.Hidden;
+				img4.Visibility = Visibility.Hidden;
+				btn2.Visibility = Visibility.Visible;
+				btn1.Visibility = Visibility.Hidden;
+				btn4.Visibility = Visibility.Hidden;
+				btn3.Visibility = Visibility.Hidden;
 				jó++;
                 nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             }
@@ -68,11 +84,19 @@ namespace Kviz
 
 		private void btn3_Click(object sender, RoutedEventArgs e)
 		{
+			btn3.Visibility = Visibility.Hidden;
 			sum++;
 			img3.Visibility = Visibility.Visible;
             nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             if (valaszok.Contains(btn3.Content))
 			{
+				img1.Visibility = Visibility.Hidden;
+				img2.Visibility = Visibility.Hidden;
+				img4.Visibility = Visibility.Hidden;
+				btn3.Visibility = Visibility.Visible;
+				btn1.Visibility = Visibility.Hidden;
+				btn2.Visibility = Visibility.Hidden;
+				btn4.Visibility = Visibility.Hidden;
 				jó++;
                 nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             }
@@ -84,10 +108,19 @@ namespace Kviz
 		private void btn4_Click(object sender, RoutedEventArgs e)
 		{
 			sum++;
+			btn4.Visibility = Visibility.Hidden;
 			img4.Visibility = Visibility.Visible;
             nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             if (valaszok.Contains(btn4.Content))
 			{
+				img1.Visibility = Visibility.Hidden;
+				img2.Visibility = Visibility.Hidden;
+				img3.Visibility = Visibility.Hidden;
+				btn4.Visibility = Visibility.Visible;
+				btn1.Visibility = Visibility.Hidden;
+				btn2.Visibility = Visibility.Hidden;
+				btn3.Visibility = Visibility.Hidden;
+
 				jó++;
                 nyomas.Content = $"Eredmény: Jó tipp:{jó} Összes tipp: {sum}";
             }
@@ -138,10 +171,16 @@ namespace Kviz
 					db++;
 					break; 
 				case 2:
+					btn1.Visibility = Visibility.Visible;
+					btn2.Visibility = Visibility.Visible;
+					btn3.Visibility = Visibility.Visible;
+					btn4.Visibility = Visibility.Visible;
+
 					img1.Visibility = Visibility.Hidden;
 					img2.Visibility = Visibility.Hidden;
 					img3.Visibility = Visibility.Hidden;
 					img4.Visibility = Visibility.Hidden;
+
 					lbl1.Content = allats[1].Kerdes;
 					btn1.Content = allats[1].V1;
 					btn2.Content = allats[1].V2;
@@ -156,10 +195,16 @@ namespace Kviz
 					db++;
 					break;
 				case 3:
+					btn1.Visibility = Visibility.Visible;
+					btn2.Visibility = Visibility.Visible;
+					btn3.Visibility = Visibility.Visible;
+					btn4.Visibility = Visibility.Visible;
+
 					img1.Visibility = Visibility.Hidden;
 					img2.Visibility = Visibility.Hidden;
 					img3.Visibility = Visibility.Hidden;
 					img4.Visibility = Visibility.Hidden;
+
 					lbl1.Content = allats[2].Kerdes;
 					btn1.Content = allats[2].V1;
 					btn2.Content = allats[2].V2;
@@ -174,10 +219,16 @@ namespace Kviz
 					db++;
 					break;
 				case 4:
+					btn1.Visibility = Visibility.Visible;
+					btn2.Visibility = Visibility.Visible;
+					btn3.Visibility = Visibility.Visible;
+					btn4.Visibility = Visibility.Visible;
+
 					img1.Visibility = Visibility.Hidden;
 					img2.Visibility = Visibility.Hidden;
 					img3.Visibility = Visibility.Hidden;
 					img4.Visibility = Visibility.Hidden;
+
 					lbl1.Content = allats[3].Kerdes;
 					btn1.Content = allats[3].V1;
 					btn2.Content = allats[3].V2;
@@ -192,10 +243,16 @@ namespace Kviz
 					db++;
 					break;
 				case 5:
+					btn1.Visibility = Visibility.Visible;
+					btn2.Visibility = Visibility.Visible;
+					btn3.Visibility = Visibility.Visible;
+					btn4.Visibility = Visibility.Visible;
+
 					img1.Visibility = Visibility.Hidden;
 					img2.Visibility = Visibility.Hidden;
 					img3.Visibility = Visibility.Hidden;
 					img4.Visibility = Visibility.Hidden;
+
 					lbl1.Content = allats[4].Kerdes;
 					btn1.Content = allats[4].V1;
 					btn2.Content = allats[4].V2;
